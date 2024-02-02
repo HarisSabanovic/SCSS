@@ -149,3 +149,19 @@ nav {
     }
 }
 
+.container {
+    width: 90%;
+    margin-top: 20px;
+    margin-inline: auto;
+    background-color: base.$primary-color-light;
+
+    h1 {
+        text-align: center;
+    }
+
+    .game-container {
+        padding: 10px;
+        max-width: 70ch;
+        margin-inline: auto;
+    }
+}
