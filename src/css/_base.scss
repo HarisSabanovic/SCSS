@@ -1,6 +1,17 @@
 $primary-color: #000000;
-$primary-color-dark: darken($primary-color, 30%);
-$primary-color-light: lighten($primary-color, 20%);
+$secondary-color:#fff;
 
+$primary-color-dark: darken($secondary-color, 30%);
+$primary-color-light: lighten($primary-color, 100%);
+
+$accent-color: #57886c;
 $text-color-light: #fff;
 $text-color-dark: #000;
+
+$scheme-default: $text-color-light, $primary-color;
+$scheme-reverse: $text-color-dark, $secondary-color;
+
+@mixin color-scheme($text, $bg) {
+    background-color: $bg;
+    color: $text;
+}
