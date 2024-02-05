@@ -1,4 +1,5 @@
 @use "base";
+@use "colors";
 
 * {
     margin: 0;
@@ -7,17 +8,13 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-body{
-    background-color: base.$primary-color;
-}
-  header {
-      background-color: base.$primary-color;
+  
+header {
       display: flex;
       justify-content: space-between;
     }
 
-  nav {
-      background-color: base.$primary-color;
+nav {
       font-size: 1.2em;
       position: absolute;
       left: 0;
@@ -39,19 +36,14 @@ body{
           width: 90%;
           margin-inline: auto;
           border-radius: 11px;
-          background: #57886c;
-          box-shadow:  10px -10px 25px #538167,
-             -10px 10px 25px #5b8f71;
           margin-bottom: 10px;
         }
 
       li:hover {
-          background-color: base.$primary-color-dark;
           cursor: pointer;
         }
 
       a {
-          color: base.$text-color-light;
           text-decoration: none;
           padding: 0 1em;
          }
@@ -61,8 +53,6 @@ body{
       display: flex;
       align-items: center;
       padding: 8px 15px;
-      background-color: base.$primary-color;
-      color: base.$text-color-light;
       cursor: pointer;
       border: none;
       border-radius: 10px;
@@ -72,26 +62,15 @@ body{
       margin: 10px;
     }
 
-  .menu-btn:hover {
-      background-color: base.$primary-color-dark;
-    }
-
-  .menu-btn:active {
-      background-color: base.$primary-color-light;
-    }
-
-
   .bars {
       display: block;
       width: 20px;
       height: 3px;
-      background-color: white;
       margin: 5px 5px;
     }
 
   .menu-text {
       font-size: 1.2em;
-      color: base.$text-color-light;
     }
 
   .close {
@@ -158,13 +137,11 @@ body{
     margin-inline: auto;
     padding: 10px;
     border-radius: 10px;
-    background-color: base.$primary-color-dark;
-    color:base.$text-color-light;
-    border: 4px solid #538167;
 
     h1 {
         text-align: center;
     }
+
 
     .game-container {
         padding: 10px;
@@ -175,6 +152,10 @@ body{
         img {
             padding-top: 0.8em;
             padding-bottom: 0.8em;
+        }
+
+        p {
+            line-height: 1.2em;
         }
     }
 }
