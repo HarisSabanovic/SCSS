@@ -59,7 +59,7 @@ nav {
         background-color: base.$secondary-color;
 
         nav, header, .container{
-            color: base.$text-color-dark;
+            @include base.color-scheme(base.$scheme-reverse...)
         }
     }
 }  
