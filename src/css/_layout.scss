@@ -7,109 +7,112 @@
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
-header {
+body{
     background-color: base.$primary-color;
-    display: flex;
-    justify-content: space-between;
 }
-
-nav {
-    background-color: base.$primary-color;
-    font-size: 1.2em;
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100vh;
-    width: 250px;
-    display: none;
-
-    ul {
-        width: 100%;
-        list-style-type: none;
-        text-align: center;
-        margin: 0 auto;
-        padding: 0;
-
+  header {
+      background-color: base.$primary-color;
+      display: flex;
+      justify-content: space-between;
     }
 
-    li {
-        padding: 0.8em 0;
-        width: 90%;
-        margin-inline: auto;
-        border-radius: 11px;
-        background: #57886c;
-        box-shadow:  10px -10px 25px #538167,
+  nav {
+      background-color: base.$primary-color;
+      font-size: 1.2em;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 100vh;
+      width: 250px;
+      display: none;
+
+      ul {
+          width: 100%;
+          list-style-type: none;
+          text-align: center;
+          margin: 0 auto;
+          padding: 0;
+        }
+
+      li {
+          padding: 0.8em 0;
+          width: 90%;
+          margin-inline: auto;
+          border-radius: 11px;
+          background: #57886c;
+          box-shadow:  10px -10px 25px #538167,
              -10px 10px 25px #5b8f71;
-        margin-bottom: 10px;
+          margin-bottom: 10px;
+        }
+
+      li:hover {
+          background-color: base.$primary-color-dark;
+          cursor: pointer;
+        }
+
+      a {
+          color: base.$text-color-light;
+          text-decoration: none;
+          padding: 0 1em;
+         }
     }
 
-    li:hover {
-        background-color: base.$primary-color-dark;
-        cursor: pointer;
+  .menu-btn {
+      display: flex;
+      align-items: center;
+      padding: 8px 15px;
+      background-color: base.$primary-color;
+      color: base.$text-color-light;
+      cursor: pointer;
+      border: none;
+      border-radius: 10px;
     }
 
-    a {
-        color: white;
-        text-decoration: none;
-        padding: 0 1em;
+  .open {
+      margin: 10px;
     }
-}
 
-.menu-btn {
-    display: flex;
-    align-items: center;
-    padding: 8px 15px;
-    background-color: base.$primary-color;
-    color: white;
-    cursor: pointer;
-    border: none;
-    border-radius: 10px;
-}
+  .menu-btn:hover {
+      background-color: base.$primary-color-dark;
+    }
 
-.open {
-    margin: 10px;
-}
-
-.menu-btn:hover {
-    background-color: base.$primary-color-dark;
-}
-
-.menu-btn:active {
-    background-color: base.$primary-color-light;
-}
+  .menu-btn:active {
+      background-color: base.$primary-color-light;
+    }
 
 
-.bars {
-    display: block;
-    width: 20px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 5px;
-}
+  .bars {
+      display: block;
+      width: 20px;
+      height: 3px;
+      background-color: white;
+      margin: 5px 5px;
+    }
 
-.menu-text {
-    font-size: 1.2em;
-    color: white;
-}
+  .menu-text {
+      font-size: 1.2em;
+      color: base.$text-color-light;
+    }
 
-.close {
-    margin: 1em 1.5em;
-    padding: 10px 15px;
-}
+  .close {
+      margin: 1em 1.5em;
+      padding: 10px 15px;
+    }
 
-.cross1 {
-    width: 25px;
-    transform: rotate(45deg);
-    position: relative;
-    top: 5px;
-}
+  .cross1 {
+      width: 25px;
+      transform: rotate(45deg);
+      position: relative;
+      top: 5px;
+    }
 
-.cross2 {
-    width: 25px;
-    transform: rotate(135deg);
-    position: relative;
-    top: -3px;
-}
+  .cross2 {
+      width: 25px;
+      transform: rotate(135deg);
+      position: relative;
+      top: -3px;
+    }
+
 
 @media only screen and (min-width: 900px) {
     .menu-btn {
@@ -153,7 +156,11 @@ nav {
     width: 90%;
     margin-top: 20px;
     margin-inline: auto;
-    background-color: base.$primary-color-light;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: base.$primary-color-dark;
+    color:base.$text-color-light;
+    border: 4px solid #538167;
 
     h1 {
         text-align: center;
@@ -161,7 +168,14 @@ nav {
 
     .game-container {
         padding: 10px;
+        margin-top: 40px;
         max-width: 70ch;
         margin-inline: auto;
+
+        img {
+            padding-top: 0.8em;
+            padding-bottom: 0.8em;
+        }
     }
 }
+
