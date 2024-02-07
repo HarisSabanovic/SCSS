@@ -133,30 +133,33 @@ nav {
 
 .container {
     width: 90%;
-    margin-top: 20px;
+    margin-top: 5%;
     margin-inline: auto;
     padding: 10px;
     border-radius: 10px;
+    margin-bottom: 5%;
 
     h1 {
         text-align: center;
     }
 
+}
 
-    .game-container {
-        padding: 10px;
-        margin-top: 40px;
-        max-width: 70ch;
-        margin-inline: auto;
+.game-container {
+    padding: 10px;
+    margin-top: 40px;
+    max-width: 70ch;
+    margin-inline: auto;
 
-        img {
-            padding-top: 0.8em;
-            padding-bottom: 0.8em;
-        }
+    img {
+        padding-top: 0.8em;
+        padding-bottom: 0.8em;
+        max-width: 100%;
+    }
 
-        p {
-            line-height: 1.2em;
-        }
+    p {
+        line-height: 1.2em;
+        padding-top: 0.5em;
     }
 }
 

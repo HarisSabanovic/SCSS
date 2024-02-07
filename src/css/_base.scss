@@ -1,10 +1,11 @@
 $primary-color: #000000;
 $secondary-color:#fff;
 
-$primary-color-dark: darken($secondary-color, 30%);
-$primary-color-light: lighten($primary-color, 100%);
-
 $accent-color: #57886c;
+$accent-color-dark: darken($accent-color, 30%);
+$accent-color-light: lighten($accent-color, 15%);
+
+
 $text-color-light: #fff;
 $text-color-dark: #000;
 
