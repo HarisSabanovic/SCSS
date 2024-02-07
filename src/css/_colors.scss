@@ -53,7 +53,7 @@ nav {
 
 .container {
     @include base.color-scheme(base.$scheme-default...);
-    border: 4px solid base.$accent-color;
+    @include base.color-container(base.$scheme-default...);
 }
 
 /*light mode*/
@@ -62,8 +62,12 @@ nav {
         
         background-color: base.$secondary-color;;
 
-        nav, header, .container{
+        nav, header, .container {
             @include base.color-scheme(base.$scheme-reverse...)
+        }
+
+        .container {
+            @include base.color-container(base.$scheme-reverse...);
         }
     }
 }  
