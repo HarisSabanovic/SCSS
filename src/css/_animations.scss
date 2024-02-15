@@ -1,0 +1,22 @@
+@keyframes bgTransition {
+    0% {
+        background-color: green;
+    }
+
+    50% {
+        background-color: yellow;
+    }
+
+    100% {
+        background-color: orangered;
+    }
+}
+
+@keyframes buttonTransform {
+    from {
+        transform: rotate(-10deg);
+    }
+    to {
+        transform: rotate(10deg);
+    }
+}

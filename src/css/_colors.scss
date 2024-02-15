@@ -56,6 +56,14 @@ nav {
     @include base.color-container(base.$scheme-default...);
 }
 
+#animation-bt {
+    @include base.color-scheme(base.$scheme-default...);
+}
+
+#animation-bt:active {
+    @include base.color-scheme(base.$scheme-reverse...);
+}
+
 /*light mode*/
 @media (prefers-color-scheme: light) {
     body{
@@ -68,6 +76,21 @@ nav {
 
         .container {
             @include base.color-container(base.$scheme-reverse...);
+        }
+    }
+}  
+
+@media (prefers-color-scheme: dark) {
+    body{
+        
+        background-color: base.$primary-color;;
+
+        nav, header, .container {
+            @include base.color-scheme(base.$scheme-default...)
+        }
+
+        .container {
+            @include base.color-container(base.$scheme-default...);
         }
     }
 }  

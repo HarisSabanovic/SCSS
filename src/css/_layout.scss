@@ -1,5 +1,6 @@
 @use "base";
 @use "colors";
+@use "animations";
 
 * {
     margin: 0;
@@ -163,3 +164,22 @@ nav {
     }
 }
 
+
+/*Animering*/
+
+#animation {
+  width: 150px;
+  height: 150px;
+  margin-inline: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  animation-name: bgTransition;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  display: none;
+}
+
+#animation-bt:hover {
+  cursor: pointer;
+}
