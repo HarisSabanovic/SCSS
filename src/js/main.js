@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 let openBtn = document.getElementById("open-menu");
 let closeBtn = document.getElementById("close-menu");
@@ -38,3 +38,4 @@ function toggleAnimation() {
         animationEl.style.display = "none";
     }
 }
+
