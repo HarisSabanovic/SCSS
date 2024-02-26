@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="css/main.scss">
     <script src="js/main.js" type="module"></script>
     <script src="js/map.js" type="module"></script>
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" >
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
 </head>
 <body>
     <header>
@@ -40,11 +41,11 @@
         </nav>
     </header>
     <main>
-        <label for="search">Sök:</label>
-        <input id="search">
-        <button id="searchBtn"></button>
-        <div id="map"></div>
+        <div class="map-container">
+          <input id="search" placeholder="Sök plats">
+          <button id="searchBtn">Sök</button>
+          <div id="map"></div>
+        </div>
     </main>
 </body>
 </html>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>

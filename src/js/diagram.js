@@ -49,6 +49,7 @@ function displayBarDiagram(stat) {
         }]
     },
     options: {
+        responsive:true,      
         scales: {
             y: {
                 beginAtZero: true
@@ -88,6 +89,7 @@ function displayCircleDiagram(stat) {
     },
     options: {
         scales: {
+            responsive:true, 
             y: {
                 beginAtZero: true
             }

@@ -7,3 +7,33 @@
 #animation-bt:hover {
     animation: buttonTransform 1s linear infinite alternate;
 }
+
+/*karta*/
+input {
+    width: 80%;
+    text-align: center;
+    border:2px solid #009879;
+    margin-inline: auto;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+
+#searchBtn {
+    height: 40px;
+    border: 2px solid #009879;
+    padding: 0 20px;
+    border-radius: 10px;
+    width: 50%;
+    margin-inline: auto;
+    margin-top: 20px;
+}
+
+#searchBtn:hover {
+    cursor: pointer;
+    background: none;
+    color: white;
+}
+
