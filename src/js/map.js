@@ -16,26 +16,24 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
 //klick på sök knapp
 searchButtonEl.addEventListener("click", displayLocation);
 
-function displayLocation() {
-    let userInput = inputEl.value;
-    const url =  `https://nominatim.openstreetmap.org/search?format=json&q=${userInput}`;
 
-    fetch(url)
-          .then(response => response.json())
-          .then(data => {
+async function displayLocation() {
+  let userInput = inputEl.value;
+  const url =  `https://nominatim.openstreetmap.org/search?format=json&q=${userInput}`;
 
-            let latitude = data[0].lat;
-            let longitude = data[0].lon;
+  try {
+      const response = await fetch(url);
+      const data = await response.json();
 
-            map.setView([latitude, longitude], 16);
-            
-            let singleMarker = L.marker([latitude, longitude]).addTo(map);
+      let latitude = data[0].lat;
+      let longitude = data[0].lon;
 
-            mapEl.src = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude},${latitude},${longitude},${latitude}&layer=mapnik`;
-          })
+      map.setView([latitude, longitude], 16);
+      
+      let singleMarker = L.marker([latitude, longitude]).addTo(map);
 
-          .catch(error => {
-            console.log(error);
-          })
-};
-
+      mapEl.src = `https://www.openstreetmap.org/export/embed.html?bbox=${longitude},${latitude},${longitude},${latitude}&layer=mapnik`;
+  } catch (error) {
+      console.log(error);
+  }
+}
